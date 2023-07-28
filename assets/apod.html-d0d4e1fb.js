@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-c59d3d16","path":"/portfolio/apod.html","title":"NASA API - APOD","lang":"en-US","frontmatter":{"title":"NASA API - APOD"},"headers":[{"level":3,"title":"🔗 Page Link","slug":"page-link","link":"#page-link","children":[]}],"git":{"updatedTime":null,"contributors":[]},"filePathRelative":"portfolio/apod.md"}');export{t as data};
