@@ -1,0 +1,1 @@
+const o="/myWebPortfolios/images/tip-calculator-desktop.png",s="/myWebPortfolios/images/interactive-pricing-desktop.png",t="/myWebPortfolios/images/advice-desktop.png",i="/myWebPortfolios/images/interactive-card-form-desktop.png";export{o as _,s as a,t as b,i as c};
