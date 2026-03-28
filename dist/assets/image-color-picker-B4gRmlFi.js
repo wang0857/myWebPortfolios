@@ -1,0 +1,1 @@
+var e=`/myWebPortfolios/images/image-color-picker.png`;export{e as t};

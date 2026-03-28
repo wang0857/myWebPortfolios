@@ -1,0 +1,1 @@
+var e=`/myWebPortfolios/images/my-photo.jpg`;export{e as t};

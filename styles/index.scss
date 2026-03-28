@@ -1,0 +1,222 @@
+
+/* ==================== */
+/* Font Type */
+/* ==================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;600;700&display=swap');
+
+body > * {
+    font-family: 'Poppins', 'Noto Sans TC', sans-serif;
+}
+
+
+/* ==================== */
+/* Containers */
+/* ==================== */
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin-bottom: 40px;
+}
+
+:nth-child(2 of .grid-container) {
+  padding-top: 1rem;
+}
+
+.contacts-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin-top: 40px;
+}
+
+@media screen and (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .contacts-container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+}
+
+
+/* ==================== */
+/* Hero */
+/* ==================== */
+
+.hero {
+    img {
+        border-radius: 35px;
+    }
+}
+
+.features-img {
+    &-container {
+        position: relative;
+    }
+
+    &-tag {
+        background-color: var(--c-brand);
+        color: var(--c-bg);
+        border-radius: 10px;
+        padding: 1px 8px;
+        margin: 3px 5px;
+        white-space: nowrap;
+        font-size: 0.8rem;
+
+        &-container {
+            display: flex;
+            flex-wrap: wrap;
+            position: absolute;
+            bottom: 13px;
+            left: 5px;
+            width: 100%;
+        }
+    }
+}
+
+
+/* ==================== */
+/* Buttons */
+/* ==================== */
+
+.vp-hero-action-button {
+    border-radius: 16px;
+    margin-bottom: 8px;
+
+    a.contact-me {
+        text-decoration: none !important;
+        color: var(--vp-c-accent-text);
+    }
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+
+/* ==================== */
+/* Tags */
+/* ==================== */
+
+.tags {
+    background-color: var(--c-brand);
+    color: var(--c-bg);
+    border-radius: 10px;
+    padding: 1px 8px;
+    margin: 3px 5px;
+    white-space: nowrap;
+
+    &-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+/* ==================== */
+/* Footer */
+/* ==================== */
+
+footer {
+    margin: 40px 0px;
+}
+
+/* ==================== */
+/* Photo */
+/* ==================== */
+
+.photo {
+    border-radius: 15px;
+    width: 300px;
+}
+
+.about-me-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+
+/* ==================== */
+/* Feature Card */
+/* ==================== */
+.features-card {
+    border-radius: 16px;
+    padding-bottom: 16px;
+    border: 1px solid #bbbbbb;
+    overflow: hidden;
+    box-shadow: 0 4px 10px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    h3, p, a {
+        padding-left: 16px;
+        padding-right: 16px;
+        margin: 0;
+    }
+
+    h3 {
+        padding-top: 0;
+    }
+
+    p {
+        flex-grow: 1;
+    }
+}
+
+/* ==================== */
+/* Contact Card */
+/* ==================== */
+
+.contact {
+    &-card {
+        border: 1px solid #bbbbbb;
+        box-shadow: 0 4px 10px 4px rgba(0, 0, 0, 0.1);
+        padding: 16px;
+        border-radius: 8px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 300px;
+    }
+
+    &-tag {
+        position: absolute;
+        top: 8px;
+        right: 2px;
+    }
+
+    &-icon {
+        width: 60px;
+        height: 60px;
+        path {
+            fill: var(--vp-c-text, #3c3c43);
+        }
+    }
+}
+
+/* ==================== */
+/* Dark Theme */
+/* ==================== */
+html {
+    &[data-theme="dark"] {
+        .features-card {
+            border: 1px solid #FFFFFF;
+            box-shadow: 0 4px 10px 4px rgba(255, 255, 255, 0.3);
+        }
+
+        .contact-card {
+            border: 1px solid #FFFFFF;
+            box-shadow: 0 4px 10px 4px rgba(255, 255, 255, 0.3);
+        }
+    }
+}

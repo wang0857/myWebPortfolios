@@ -1,0 +1,1 @@
+var e=`/myWebPortfolios/images/react-notifications.png`;export{e as t};

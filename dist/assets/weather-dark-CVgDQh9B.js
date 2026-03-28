@@ -1,0 +1,1 @@
+var e=`/myWebPortfolios/images/weather-light.png`,t=`/myWebPortfolios/images/weather-dark.png`;export{e as n,t};

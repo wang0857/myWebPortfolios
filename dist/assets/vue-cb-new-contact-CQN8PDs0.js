@@ -1,0 +1,1 @@
+var e=`/myWebPortfolios/images/vue-cb-homepage.png`,t=`/myWebPortfolios/images/vue-cb-details.png`,n=`/myWebPortfolios/images/vue-cb-edit.png`,r=`/myWebPortfolios/images/vue-cb-new-contact.png`;export{e as i,n,t as r,r as t};
